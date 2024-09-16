@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\s1\\Docker_Assignment\\DockerAssignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|c:\\s1\\docker_assignment\\dockerassignment\\dockerassignment\\deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|solutionrelative:dockerassignment\\deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|c:\\s1\\docker_assignment\\dockerassignment\\dockerassignment\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|solutionrelative:dockerassignment\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|c:\\s1\\docker_assignment\\dockerassignment\\dockerassignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|solutionrelative:dockerassignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|c:\\s1\\docker_assignment\\dockerassignment\\dockerassignment\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F430F5-3400-4F1F-B283-C4F85C74C2F6}|DockerAssignment\\DockerAssignment.csproj|solutionrelative:dockerassignment\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "deployment.yaml",
+              "DocumentMoniker": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\deployment.yaml",
+              "RelativeDocumentMoniker": "DockerAssignment\\deployment.yaml",
+              "ToolTip": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\deployment.yaml",
+              "RelativeToolTip": "DockerAssignment\\deployment.yaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-09-13T08:48:10.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "DockerAssignment\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "DockerAssignment\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAIwBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T03:25:14.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\Program.cs",
+              "RelativeDocumentMoniker": "DockerAssignment\\Program.cs",
+              "ToolTip": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\Program.cs",
+              "RelativeToolTip": "DockerAssignment\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T03:23:08.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\Dockerfile",
+              "RelativeDocumentMoniker": "DockerAssignment\\Dockerfile",
+              "ToolTip": "C:\\s1\\Docker_Assignment\\DockerAssignment\\DockerAssignment\\Dockerfile",
+              "RelativeToolTip": "DockerAssignment\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-13T03:12:55.209Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 800,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 800,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
