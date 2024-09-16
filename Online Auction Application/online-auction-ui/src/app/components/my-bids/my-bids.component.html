@@ -1,0 +1,33 @@
+<mat-card>
+  <!-- <mat-card-title>My Bids</mat-card-title> -->
+  <mat-card-content>
+    <table mat-table [dataSource]="dataSource">
+      
+
+      <!-- Product Name Column -->
+      <ng-container matColumnDef="productName">
+        <th mat-header-cell *matHeaderCellDef> Product Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.product.name}} </td>
+      </ng-container>
+
+      <!-- Bid Amount Column -->
+      <ng-container matColumnDef="amount">
+        <th mat-header-cell *matHeaderCellDef> Bid Amount </th>
+        <td mat-cell *matCellDef="let element"> ₹{{element.amount}} </td>
+      </ng-container>
+
+      <!-- Bid Time Column -->
+      <ng-container matColumnDef="bidTime">
+        <th mat-header-cell *matHeaderCellDef> Bid Time </th>
+        <td mat-cell *matCellDef="let element"> {{element.bidTime | date:'short'}} </td>
+      </ng-container>
+
+     
+
+      
+
+      <tr mat-header-row *matHeaderRowDef="['productName', 'amount', 'bidTime']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['productName', 'amount', 'bidTime'];"></tr>
+    </table>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,82 @@
+/* Center-align all content inside the mat-card */
+mat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Center-align the search, filter, and button section horizontally */
+mat-card-content > div {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    gap: 100px; /* Space between elements */
+    margin-bottom: 16px; /* Space below the section */
+}
+
+/* Center-align the table */
+table {
+    width: 100%;
+    max-width: 1200px; /* Max width for the table */
+    margin: 0 auto; /* Center-align the table horizontally */
+    box-shadow: 0 0 15px rgba(53, 16, 112, 0.3); /* Add glow effect to table */
+    border-radius: 8px; /* Rounded corners for the table */
+}
+
+/* Add hover effect for table rows */
+tr:hover {
+    background-color: #f5f5f5; /* Light grey background on hover */
+}
+
+/* Add padding to table cells */
+td, th {
+    padding: 12px;
+}
+
+/* Center-align text in table cells */
+td, th {
+    text-align: center;
+}
+
+/* Add margin and padding to form fields */
+mat-form-field {
+    flex: 1; /* Allow fields to grow */
+    min-width: 150px; /* Minimum width for form fields */
+}
+
+/* Add margin and padding to buttons */
+button {
+    margin: 8px;
+}
+
+/* Add padding to inputs */
+input[matInput] {
+    padding: 8px;
+}
+
+/* Add styling for the "Add Product" button */
+button[mat-raised-button] {
+    flex-shrink: 0; /* Prevent button from shrinking */
+    margin-left: auto; /* Push the button to the far right */
+}
+
+/* Add margin to the table header and rows */
+th.mat-header-cell {
+    background-color: #f5f5f5; /* Light grey background for headers */
+}
+
+/* Add hover effect to the button */
+button.mat-button:hover, button.mat-raised-button:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Add padding to table header and data cells */
+.mat-header-cell, .mat-cell {
+    padding: 12px;
+}
+
+/* Ensure the mat-card content has enough space around it */
+mat-card-content {
+    padding: 24px;
+}

@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <span>Online Auction Application</span>
+  
+  <span class="spacer"></span>
+  <ng-container *ngIf="!isLoggedIn">
+    <button mat-button routerLink="/login">Login</button>
+  </ng-container>
+  <ng-container *ngIf="isLoggedIn">
+
+    <ng-container *ngIf="isAdmin">
+      <button mat-button routerLink="/admin">Dashboard</button>
+    </ng-container>
+
+    <!-- <ng-container *ngIf="isAdmin">
+      <button mat-button routerLink="/admin/products">Product List</button>
+    </ng-container> -->
+    <ng-container *ngIf="!isAdmin">
+      <button mat-button routerLink="/products">Auction</button>
+    </ng-container>
+    <button mat-button [matMenuTriggerFor]="menu">{{ userName }}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/added-products">Added Products</button>
+      <button mat-menu-item routerLink="/bought-products">Bought Products</button>
+      <button mat-menu-item routerLink="/my-bids">My Bids</button>
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </ng-container>
+</mat-toolbar>

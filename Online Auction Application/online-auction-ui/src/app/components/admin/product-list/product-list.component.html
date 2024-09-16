@@ -1,0 +1,94 @@
+<mat-card>
+  <!-- <mat-card-title>Manage Products</mat-card-title> -->
+  <mat-card-content>
+    <table mat-table [dataSource]="products" class="mat-elevation-z8">
+
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let product"> {{product.id}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let product"> {{product.name}} </td>
+      </ng-container>
+
+      <!-- Description Column -->
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let product"> {{product.description}} </td>
+      </ng-container>
+
+ <!-- Starting Price Column -->
+ <ng-container matColumnDef="startingPrice">
+  <th mat-header-cell *matHeaderCellDef> Starting Price </th>
+  <td mat-cell *matCellDef="let element"> ₹{{element.startingPrice}} </td>
+</ng-container>
+
+<!-- Auction Duration Column -->
+<ng-container matColumnDef="auctionDuration">
+  <th mat-header-cell *matHeaderCellDef> Auction Duration </th>
+  <td mat-cell *matCellDef="let element"> 
+    <ng-container *ngIf="element.auctionStartTime && element.auctionEndTime">
+      <ng-container *ngIf="calculateTimeRemaining(element.auctionStartTime, element.auctionEndTime) !== 'Closed'">
+        {{ calculateTimeRemaining(element.auctionStartTime, element.auctionEndTime) }}
+      </ng-container>
+      <ng-container *ngIf="calculateTimeRemaining(element.auctionStartTime, element.auctionEndTime) === 'Closed'">
+        Closed
+      </ng-container>
+      <ng-container *ngIf="calculateTimeRemaining(element.auctionStartTime, element.auctionEndTime) === 'Auction not started'">
+        Auction not started
+      </ng-container>
+    </ng-container>
+  </td>
+</ng-container>
+
+<!-- Category Column -->
+<ng-container matColumnDef="category">
+  <th mat-header-cell *matHeaderCellDef> Category </th>
+  <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+</ng-container>
+
+<!-- Reserved Price Column -->
+<ng-container matColumnDef="reservedPrice">
+  <th mat-header-cell *matHeaderCellDef> Reserved Price </th>
+  <td mat-cell *matCellDef="let element"> ₹{{element.reservedPrice}} </td>
+</ng-container>
+
+<!-- Highest Bid Column -->
+<ng-container matColumnDef="highestBid">
+  <th mat-header-cell *matHeaderCellDef> Highest Bid </th>
+  <td mat-cell *matCellDef="let element"> 
+    <ng-container *ngIf="element.currentHighestBid">
+      ₹{{element.currentHighestBid}}
+    </ng-container>
+    <ng-container *ngIf="!element.currentHighestBid">
+      Nil
+    </ng-container>
+  </td>
+</ng-container>
+
+<!-- Sold Column -->
+<ng-container matColumnDef="sold">
+  <th mat-header-cell *matHeaderCellDef> Sold </th>
+  <td mat-cell *matCellDef="let element"> 
+    {{ element.sold ? 'Yes' : 'No' }} 
+  </td>
+</ng-container>
+
+
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let product">
+          <button mat-button (click)="deleteProduct(product.id)">Delete</button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,29 @@
+<div class="login-container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Login</h3>
+    </div>
+    <div class="card-body">
+      <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput class="form-control" required ngModel name="email">
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput class="form-control" required type="password" ngModel name="password">
+          </mat-form-field>
+        </div>
+
+        <div class="form-group button-group">
+          <button [disabled]="!loginForm.valid" type="submit" class="btn btn-primary">Login</button>
+          <button type="reset" class="btn btn-secondary ml-2">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
